@@ -11,9 +11,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var login = findViewById<EditText>(R.id.login)
-        var loginText = login.text.toString()
         findViewById<Button>(R.id.button).setOnClickListener {
-            if (loginText != "sussybaka") {
+            if (login.text.toString() != "sussybaka") {
                 login.error = "Неверный пароль."
             }
         }

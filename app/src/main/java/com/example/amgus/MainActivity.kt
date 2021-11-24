@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
                     pass.text.clear()
                 }
 
-                if (count >= 3) {
+                if (count > 3) {
                     snack.setAction("Взломать") {
                         snack2.show()
                     }

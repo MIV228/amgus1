@@ -1,6 +1,7 @@
 package com.example.amgus
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -61,6 +62,8 @@ class MainActivity : AppCompatActivity() {
                 snack.setAction("Крутой") {
                     login.text.clear()
                     pass.text.clear()
+                    var intent = Intent(this, MainActivity2::class.java)
+                    startActivity(intent)
                 }
                 snack.show()
             }

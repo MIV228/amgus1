@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/green_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/green"
+        android:text="Вперёд!"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,SmallSp" />
+
+    <Button
+        android:id="@+id/red_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/red"
+        android:text="Вперёд!"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/green_button"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="HardcodedText,SmallSp" />
+
+    <Button
+        android:id="@+id/yellow_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/yellow"
+        android:text="Вперёд!"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_button"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="HardcodedText,SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

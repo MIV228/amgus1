@@ -6,7 +6,7 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 
 class AmongusActivity : AppCompatActivity() {
-    var data = List(Int.MAX_VALUE) {
+    var data = List(100000) {
         "амогусик ${it + 1}"
     }
     override fun onCreate(savedInstanceState: Bundle?) {

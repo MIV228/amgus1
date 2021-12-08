@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Amgus">
         <activity
+            android:name=".NameActivity"
+            android:exported="false" />
+        <activity
             android:name=".AmongusActivity"
             android:exported="false" />
         <activity
@@ -26,7 +29,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

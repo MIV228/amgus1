@@ -6,8 +6,9 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 
 class AmongusActivity : AppCompatActivity() {
-    var data = List(100000) {
-        "амогусик ${it + 1}"
+    var count = 0
+    var data = MutableList(100000) {
+        count
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,5 +19,12 @@ class AmongusActivity : AppCompatActivity() {
             android.R.layout.simple_list_item_1,
             data
         )
+        listView.setOnItemClickListener { parent, view, position, id ->
+            var element = data
+            var result = data[position]
+            var int = result
+            element[position] = int + 1
+        }
+
     }
 }

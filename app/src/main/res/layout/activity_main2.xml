@@ -7,6 +7,21 @@
     tools:context=".MainActivity2">
 
     <Button
+        android:id="@+id/materialButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/red"
+        android:text="чупапи муняня"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintBottom_toTopOf="@+id/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,SmallSp" />
+
+    <Button
         android:id="@+id/green_button"
         android:layout_width="100dp"
         android:layout_height="50dp"

@@ -13,6 +13,7 @@ class MainActivity2 : AppCompatActivity() {
         val amogusButton = findViewById<Button>(R.id.amogus_button)
         val greenButton = findViewById<Button>(R.id.green_button)
         val materialButton = findViewById<Button>(R.id.materialButton)
+        val watchButton = findViewById<Button>(R.id.watch_button)
         greenButton.setOnClickListener {
             val colorPickerDialog = ColorPickerDialog.createColorPickerDialog(this)
             colorPickerDialog.setOnColorPickedListener { color, _ ->
@@ -28,6 +29,10 @@ class MainActivity2 : AppCompatActivity() {
         }
         materialButton.setOnClickListener {
             val intent = Intent(this, MaterialActivity::class.java)
+            startActivity(intent)
+        }
+        watchButton.setOnClickListener {
+            val intent = Intent(this, WatchActivity::class.java)
             startActivity(intent)
         }
     }

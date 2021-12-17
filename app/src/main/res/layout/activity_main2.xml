@@ -50,4 +50,19 @@
         app:layout_constraintVertical_bias="0.65"
         tools:ignore="HardcodedText,SmallSp" />
 
+    <Button
+        android:id="@+id/watch_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/orange"
+        android:text="Смотреть"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amogus_button"
+        app:layout_constraintVertical_bias="0.25"
+        tools:ignore="HardcodedText,SmallSp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

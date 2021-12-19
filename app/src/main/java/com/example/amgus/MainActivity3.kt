@@ -13,7 +13,7 @@ class MainActivity3 : AppCompatActivity() {
         val clickerButton = findViewById<Button>(R.id.clicker_button)
 
         clickerButton.setOnClickListener {
-            val intent = Intent(this, MainActivity3::class.java)
+            val intent = Intent(this, ClickerActivity::class.java)
             startActivity(intent)
         }
     }

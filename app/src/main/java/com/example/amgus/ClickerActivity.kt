@@ -14,13 +14,12 @@ class ClickerActivity : AppCompatActivity() {
         var clickCount = PreferenceManager.getDefaultSharedPreferences(applicationContext).getInt("clickCount", 0)
         val clickButton = findViewById<Button>(R.id.click_button)
         val clicks = findViewById<TextView>(R.id.clicks)
+        clicks.text = clickCount.toString()
 
         clickButton.setOnClickListener {
             clickCount++
             clicks.text = clickCount.toString()
             PreferenceManager.getDefaultSharedPreferences(applicationContext).edit().putInt("clickCount", clickCount).apply()
         }
-
-
     }
 }

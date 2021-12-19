@@ -10,6 +10,7 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+        val nextPageButton = findViewById<Button>(R.id.next_page_button)
         val amogusButton = findViewById<Button>(R.id.amogus_button)
         val greenButton = findViewById<Button>(R.id.green_button)
         val materialButton = findViewById<Button>(R.id.materialButton)
@@ -33,6 +34,10 @@ class MainActivity2 : AppCompatActivity() {
         }
         watchButton.setOnClickListener {
             val intent = Intent(this, WatchActivity::class.java)
+            startActivity(intent)
+        }
+        nextPageButton.setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
             startActivity(intent)
         }
     }

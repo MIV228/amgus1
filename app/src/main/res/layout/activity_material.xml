@@ -8,7 +8,7 @@
     tools:context=".MaterialActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextField"
+        android:id="@+id/email"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="343dp"
         android:layout_height="44dp"
@@ -28,7 +28,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextField2"
+        android:id="@+id/password"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="343dp"
         android:layout_height="44dp"
@@ -38,7 +38,7 @@
         app:hintTextColor="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/outlinedTextField"
+        app:layout_constraintTop_toBottomOf="@id/email"
         tools:ignore="HardcodedText,MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -70,7 +70,7 @@
         tools:ignore="ContentDescription,MissingConstraints" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
+        android:id="@+id/sign_in"
         android:layout_width="343dp"
         android:layout_height="44dp"
         android:layout_marginStart="2dp"
@@ -82,11 +82,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField2"
+        app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.55"
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
         android:layout_width="343dp"
         android:layout_height="44dp"
         android:layout_marginStart="2dp"
@@ -98,7 +99,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in"
         app:strokeColor="@color/gray"
         app:strokeWidth="1dp"
         tools:ignore="HardcodedText,MissingConstraints" />

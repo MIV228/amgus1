@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Amgus">
         <activity
+            android:name=".LifecycleActivity"
+            android:exported="false" />
+        <activity
             android:name=".ClickerActivity"
             android:exported="false" />
         <activity

@@ -11,9 +11,15 @@ class MainActivity3 : AppCompatActivity() {
         setContentView(R.layout.activity_main3)
 
         val clickerButton = findViewById<Button>(R.id.clicker_button)
+        val lifecycleButton = findViewById<Button>(R.id.lifecycle_button)
 
         clickerButton.setOnClickListener {
             val intent = Intent(this, ClickerActivity::class.java)
+            startActivity(intent)
+        }
+
+        lifecycleButton.setOnClickListener {
+            val intent = Intent(this, LifecycleActivity::class.java)
             startActivity(intent)
         }
     }

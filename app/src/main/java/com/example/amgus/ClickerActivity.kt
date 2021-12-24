@@ -8,6 +8,7 @@ import android.text.TextWatcher
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.example.amgus.Repository.clickCount
 
 class ClickerActivity : AppCompatActivity() {
 
@@ -17,7 +18,7 @@ class ClickerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_clicker)
 
-        var clickCount = PreferenceManager.getDefaultSharedPreferences(applicationContext).getInt("clickCount", 0)
+        clickCount = PreferenceManager.getDefaultSharedPreferences(applicationContext).getInt("clickCount", 0)
         val clickButton = findViewById<Button>(R.id.click_button)
         val clicks = findViewById<TextView>(R.id.clicks)
         clicks.text = clickCount.toString()

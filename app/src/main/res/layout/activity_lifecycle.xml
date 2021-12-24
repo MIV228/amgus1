@@ -7,12 +7,16 @@
     tools:context=".LifecycleActivity">
 
     <TextView
+        android:id="@+id/score"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Lifecycle"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
